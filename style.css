@@ -1,0 +1,120 @@
+body, html{
+    height:100%;
+}
+
+.container{
+    display:flex;
+    height:100vh;
+}
+
+.left-panel, .right-panel{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+/* LEFT PANEL STYLING*/
+
+@font-face{
+    font-family:my-font;
+    src:url(fonts/Cat\ paw.ttf);
+}
+
+@font-face{
+    font-family:my-font2;
+    src:url(fonts/KGBlankSpaceSolid.ttf);
+}
+.left-panel{
+width:40%;
+padding:40px;
+background-image:url(images/blanket.jpg);
+color:white;
+font-family:my-font;
+letter-spacing:5px;
+font-size:65px;
+}
+
+.forb{
+    background-color: rgba(0, 0, 0, 0.514);
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    padding:40px;
+    height:150px;
+    width:600px;
+    gap:15px;
+    justify-content:center;
+}
+
+.logo{
+    height:120px;
+    width:auto;
+}
+
+/* RIGHT PANEL STYLING*/
+
+.introp{
+    letter-spacing:3px;
+    font-size:20px;
+    font-family:my-font2;
+    margin-left:35px;
+}
+
+.section-one{
+    background-color:rgba(192, 190, 190, 0.11);
+    margin-top:none;
+}
+
+.right-panel{
+    font-family:my-font2;
+    letter-spacing:3px;
+}
+.heading{
+    letter-spacing:3px;
+    font-family:my-font2;
+    margin-left:35px;
+}
+
+input, label{
+    display:block;
+}
+
+.form-grid {
+  display: flex;
+  gap: 40px;
+  margin: 0 35px 25px;
+}
+
+.left-row,
+.right-row {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+input{
+height: 40px;
+  font-size: 16px;
+  padding: 0 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  outline: none;
+}
+
+input:focus{
+border-color: #007BFF;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+label{
+    margin-bottom:6px;
+}
+
+input:invalid:focus {
+  border-color: red;
+  box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.25);
+}
+
